@@ -1,0 +1,160 @@
+.container {
+	width: 100%;
+	max-width: 1390px;
+	margin: 0 auto;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
+}
+
+select, input, a {
+	outline: none;
+}
+
+/* header  */
+.header {
+	width: 100%;
+	background: #FFFFFF;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 6px 0px;
+}
+.header__container {
+	display: flex;
+	justify-content: space-between;
+}
+.header__logo {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 22px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+
+	color: #000000;
+}
+
+.header__buttons {
+
+}
+
+.header__button {
+	margin-left: 12px;
+	display: inline-block;
+}
+.header__button:first-child {
+	margin-left: 0px;
+}
+
+/* header end  */
+
+
+/* footer  */
+.footer {
+	margin-top: 70px;
+	padding: 70px 0px;
+}
+.footer__container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__list {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+.footer__li {
+	margin-bottom: 8px;
+}
+.footer__li.footer__li_title {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	/* identical to box height, or 150% */
+
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+
+	/* Brand / Black */
+
+	color: #333333;
+	margin-bottom: 16px;
+}
+
+.footer__li:last-child {
+	margin-bottom: 0px;	
+}
+
+.footer__link {
+	text-decoration: none;
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	/* identical to box height, or 143% */
+
+	letter-spacing: 0.04em;
+
+	/* Brand / Black */
+
+	color: #333333;
+
+}
+
+.footer-subscribe {
+    margin-top: 20px;
+    display: block;
+}
+
+.footer-subscribe__group {
+	display: block;
+	margin-bottom: 35px;
+}
+
+.footer-subscribe__group:last-child {
+	margin-bottom: 0px;
+}
+
+.footer-subscribe__input {
+	padding: 12px;
+	border: 0px;
+	border-bottom: 1px solid #C4C4C4;
+	width: 100%;
+}
+
+.footer-subscribe__button {
+	cursor: pointer;
+	width: 150px;
+	height: 36px;
+
+	background: #FFFFFF;
+
+	border: 1px solid #333333;
+	box-sizing: border-box;
+
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	/* identical to box height, or 143% */
+
+	letter-spacing: 0.04em;
+
+	/* Brand / Black */
+
+	color: #333333;
+
+	display: inline-block;
+}
+
+/* footer end  */

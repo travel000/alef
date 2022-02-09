@@ -1,0 +1,54 @@
+.ico {
+	display: inline-block;
+}
+
+.ico.ico_extra_1 {
+	background: url("../../assets/images/icons/extra_1.png");
+	width: 15px;
+	height: 15px;
+}
+.ico.ico_extra_2 {
+	background: url("../../assets/images/icons/extra_2.png");
+	width: 18px;
+	height: 18px;
+}
+.ico.ico_extra_3 {
+	background: url("../../assets/images/icons/extra_3.png");
+	width: 14px;
+	height: 10px;
+}
+
+
+.ico.ico_full_screen {
+	background: url("../../assets/images/icons/full_screen.svg");
+	width: 24px;
+	height: 24px;
+}
+.ico.ico_heart {
+	background: url("../../assets/images/icons/heart.svg");
+	width: 15px;
+	height: 15.5px;
+}
+.ico.ico_bag {
+	background: url("../../assets/images/icons/bag.svg");
+	width: 48px;
+	height: 48px;
+}
+
+.ico.ico_bag_min {
+	background: url("../../assets/images/icons/bag_min.svg");
+	width: 24px;
+	height: 24px;
+}
+
+.ico.ico_favorite {
+	background: url("../../assets/images/icons/favorite.svg");
+	width: 24px;
+	height: 24px;
+}
+
+.ico.ico_person {
+	background: url("../../assets/images/icons/person.svg");
+	width: 24px;
+	height: 24px;
+}

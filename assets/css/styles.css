@@ -1,0 +1,118 @@
+.styles {
+
+}
+
+.styles__group {
+
+}
+
+.styles__group.styles__group_seeall {
+	padding: 24px 0px;
+	text-align: center;
+}
+
+.styles__see {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	/* identical to box height, or 143% */
+
+	letter-spacing: 0.04em;
+	text-decoration-line: underline;
+
+	color: #333333;
+
+	display: inline-block;
+}
+
+.styles-gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-gap: 16px
+}
+
+.styles-gallery__left {
+	display: grid;
+	grid-template-columns: 1fr;	
+	grid-template-rows: 1fr;
+}
+
+.styles-gallery__right {
+	display: grid;
+	grid-template-columns: 1fr 1fr;	
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 16px
+}
+
+.styles-gallery__item {
+	overflow: hidden;
+	position: relative;
+}
+
+.styles-gallery__item img {
+    width: 100%;
+    height: 100%;
+}
+
+.styles-ginfo {
+	position: absolute;
+	z-index: 10;
+	left: 0px;
+	top: 0px;
+	background-color: #333333;
+	opacity: 0.7;
+	width: 100%;
+	height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.styles-ginfo__screen {
+	position: absolute;
+	right: 12px;
+	top: 12px;
+}
+
+.styles-ginfo__addlike {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.04em;
+	color: #FFFFFF;	
+	display: inline-block;
+	text-decoration: none;
+}
+
+.styles-ginfo__addlike i {
+	margin-right: 6.5px;
+	position: relative;
+	top: 2px;
+}
+
+.styles-ginfo__like {
+	position: absolute;
+	left: 0px;
+	bottom: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+.styles-ginfo__findout {
+	cursor: pointer;
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.04em;
+	color: #FFFFFF;
+	text-align: center;
+
+	display: inline-block;
+}
