@@ -39,6 +39,10 @@
 	position: absolute;
 }
 
+.card-slider__bigimg img {
+	width: 686px;
+}
+
 .card-slider__img:first-child {
 	margin-top: 0px;	
 }
@@ -345,6 +349,7 @@
 	padding: 12px 20px;
 	text-align: center;
 	cursor: pointer;
+	outline: none;
 }
 
 .card-count__but:hover {
@@ -356,6 +361,10 @@
 	height: 100%;
 	padding: 12px 0px;
 	text-align: center;
+}
+
+.card-info_buttons {
+	display: flex;
 }
 
 .card-info__add {

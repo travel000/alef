@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/card.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/media.css">
 </head>
 
 <body>
@@ -22,6 +23,15 @@
 				<a href="#" class="header__button"><i class="ico ico_person"></i></a>
 				<a href="#" class="header__button"><i class="ico ico_favorite"></i></a>
 				<a href="#" class="header__button"><i class="ico ico_bag_min"></i></a>
+
+				<span class="header__button">
+					<label class="menubutton" onclick="showMenu()">
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			        </label>
+		        </span>
+
 			</div>
 
 		</div>
@@ -35,19 +45,19 @@
 						<img src="assets/images/slider/14896420-2-1.jpg" alt="">
 					</div>
 					<div class="card-slider__previews">
-						<a href="" class="card-slider__img card-slider__img_active">
+						<a href="" class="card-slider__img card-slider__img_active" data-src="assets/images/slider/14896420-2-1.jpg">
 							<img src="assets/images/slider/14896420-2-2.jpg" alt="">
 						</a>
-						<a href="" class="card-slider__img">
+						<a href="" class="card-slider__img" data-src="assets/images/slider/14896420-1-1.jpg">
 							<img src="assets/images/slider/14896420-1-1.jpg" alt="">
 						</a>
-						<a href="" class="card-slider__img">
+						<a href="" class="card-slider__img" data-src="assets/images/slider/14896420-3-1.jpg">
 							<img src="assets/images/slider/14896420-3-1.jpg" alt="">
 						</a>
-						<a href="" class="card-slider__img">
+						<a href="" class="card-slider__img" data-src="assets/images/slider/14896420-4-1.jpg">
 							<img src="assets/images/slider/14896420-4-1.jpg" alt="">
 						</a>
-						<a href="" class="card-slider__img">
+						<a href="" class="card-slider__img" data-src="assets/images/slider/14896420-5-1.jpg">
 							<img src="assets/images/slider/14896420-5-1.jpg" alt="">
 						</a>
 					</div>
@@ -104,12 +114,14 @@
 					<div class="card-group card-group_cart">
 						<div class="card-info__flex">
 							<div class="card-count">
-								<span class="card-count__but card-count__but_prev">+</span>
+								<span class="card-count__but card-count__but_prev" data-mod="true">+</span>
 								<span class="card-count__number">1</span>
-								<span class="card-count__but card-count__but_next">-</span>
+								<span class="card-count__but card-count__but_next" data-mod="false">-</span>
 							</div>
-							<button type="button" class="card-info__add card-info__add_cart">Добавить в корзину</button>
-							<button type="button" class="card-info__add card-info__add_fav">♡</button>
+							<div class="card-info_buttons">
+								<button type="button" class="card-info__add card-info__add_cart" onclick="addTo('cart')">Добавить в корзину</button>
+								<button type="button" class="card-info__add card-info__add_fav" onclick="addTo('fav')">♡</button>
+							</div>
 						</div>
 						<a href="#" class="card-info__click">Определить размер</a>
 					</div>
@@ -173,36 +185,56 @@
 
 	<footer class="footer">
 		<div class="footer__container container">
-			<ul class="footer__list">
-				<li class="footer__li footer__li_title">покупателям</li>
-				<li class="footer__li"><a href="#" class="footer__link">Каталог</a></li>
-				<li class="footer__li"><a href="#" class="footer__link">Акции</a></li>
-				<li class="footer__li"><a href="#" class="footer__link">Бренды</a></li>
-			</ul>
-			<ul class="footer__list">
-				<li class="footer__li footer__li_title">о нас</li>
-				<li class="footer__li"><a href="#" class="footer__link">О компании</a></li>
-				<li class="footer__li"><a href="#" class="footer__link">Новости</a></li>
-				<li class="footer__li"><a href="#" class="footer__link">Команда</a></li>
-			</ul>
+			<div class="footer__menu">
+				<ul class="footer__list footer__list_1">
+					<li class="footer__li footer__li_title">покупателям</li>
+					<li class="footer__li"><a href="#" class="footer__link">Каталог</a></li>
+					<li class="footer__li"><a href="#" class="footer__link">Акции</a></li>
+					<li class="footer__li"><a href="#" class="footer__link">Бренды</a></li>
+				</ul>
+				<ul class="footer__list footer__list_2">
+					<li class="footer__li footer__li_title">о нас</li>
+					<li class="footer__li"><a href="#" class="footer__link">О компании</a></li>
+					<li class="footer__li"><a href="#" class="footer__link">Новости</a></li>
+					<li class="footer__li"><a href="#" class="footer__link">Команда</a></li>
+				</ul>
+			</div>
 
-			<ul class="footer__list">
-				<li class="footer__li footer__li_title">Узнайте первыми о новинках и акциях</li>
-				<li class="footer__li">
-					<span class="footer-subscribe">
-						<span class="footer-subscribe__group">
-							<input type="text" placeholder="Адрес электронной почты" class="footer-subscribe__input">
+			<div class="footer__subs">
+				<ul class="footer__list">
+					<li class="footer__li footer__li_title">Узнайте первыми о новинках и акциях</li>
+					<li class="footer__li">
+						<span class="footer-subscribe">
+							<span class="footer-subscribe__group">
+								<input type="text" placeholder="Адрес электронной почты" class="footer-subscribe__input">
+							</span>
+							<span class="footer-subscribe__group text-right">
+								<button class="footer-subscribe__button">Подписаться</button>
+							</span>
 						</span>
-						<span class="footer-subscribe__group text-right">
-							<button class="footer-subscribe__button">Подписаться</button>
-						</span>
-					</span>
-				</li>
-			</ul>
+					</li>
+				</ul>
+			</div>
 
 		</div>
 	</footer>
 
+	<div class="mobail-menu">
+
+		<a href="#" class="mobail-menu__close" onclick="showMenu()">
+
+		<ul class="mobail-menu__ul">
+			<li class="mobail-menu__li"><a href="#" class="mobail-menu__link">постельное белье</a></li>
+			<li class="mobail-menu__li"><a href="#" class="mobail-menu__link">одежда для дома</a></li>
+			<li class="mobail-menu__li"><a href="#" class="mobail-menu__link">Одежда для улицы</a></li>
+			<li class="mobail-menu__li"><a href="#" class="mobail-menu__link" onclick="showMenu()">ВЫход</a></li>
+		</ul>
+	</div>
+
+	<script src="assets/js/libs/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" href="assets/js/libs/toastr.js/toastr.min.css ">
+	<script src="assets/js/libs/toastr.js/toastr.min.js"></script>
+	<script src="assets/js/main.js"></script>
 </body>
 
 </html>
